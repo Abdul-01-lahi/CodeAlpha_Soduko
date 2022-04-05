@@ -1,0 +1,5 @@
+﻿  Reading Qt configuration (C:/Qt/6.2.3/msvc2019_64/bin/qmake)
+  Sudoku.cpp
+C:\Users\matth\source\repos\SudokuSolver2\Sudoku.cpp(102,19): warning C4834: discarding return value of function with 'nodiscard' attribute
+  moc_Sudoku.cpp
+  SudokuSolver2.vcxproj -> C:\Users\matth\source\repos\Sudoku\x64\Debug\SudokuSolver2.exe
