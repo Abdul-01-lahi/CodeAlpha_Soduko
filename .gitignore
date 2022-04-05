@@ -7,3 +7,7 @@ Build/
 .user
 .qrc
 
+SudokuSolver2.vcxproj
+SudokuSolver2.vcxproj.filters
+SudokuSolver2.vcxproj.user
+Sudoku.qrc
