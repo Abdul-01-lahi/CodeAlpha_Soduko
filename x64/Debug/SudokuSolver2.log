@@ -1,5 +1,6 @@
 ﻿  Reading Qt configuration (C:/Qt/6.2.3/msvc2019_64/bin/qmake)
+  moc include\Sudoku.h
+  main.cpp
   Sudoku.cpp
-C:\Users\matth\source\repos\SudokuSolver2\Sudoku.cpp(102,19): warning C4834: discarding return value of function with 'nodiscard' attribute
-  moc_Sudoku.cpp
-  SudokuSolver2.vcxproj -> C:\Users\matth\source\repos\Sudoku\x64\Debug\SudokuSolver2.exe
+C:\Users\matth\source\repos\SudokuSolver2\src\main.cpp(1,10): fatal error C1083: Cannot open include file: 'Sudoku.h': No such file or directory
+C:\Users\matth\source\repos\SudokuSolver2\src\Sudoku.cpp(2,10): fatal error C1083: Cannot open include file: 'Sudoku.h': No such file or directory

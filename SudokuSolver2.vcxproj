@@ -97,13 +97,17 @@
   <ItemGroup>
     <QtRcc Include="Sudoku.qrc" />
     <QtUic Include="Sudoku.ui" />
-    <QtMoc Include="Sudoku.h" />
-    <ClCompile Include="Solve.cpp" />
-    <ClCompile Include="Sudoku.cpp" />
-    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="Solve.h" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Solve.cpp" />
+    <ClCompile Include="src\Sudoku.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="include\Solve.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="include\Sudoku.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

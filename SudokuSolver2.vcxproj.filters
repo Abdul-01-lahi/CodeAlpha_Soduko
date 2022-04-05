@@ -29,23 +29,23 @@
     <QtUic Include="Sudoku.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtMoc Include="Sudoku.h">
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Solve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sudoku.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="include\Solve.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <ClCompile Include="Sudoku.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Solve.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="Solve.h">
+    <QtMoc Include="include\Sudoku.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
