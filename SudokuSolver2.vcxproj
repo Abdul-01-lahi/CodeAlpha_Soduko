@@ -56,9 +56,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <OutDir>$(ProjectDir)Build\</OutDir>
+    <IntDir>$(ProjectDir)Build\</IntDir>
+    <TargetName>SudokuGUI</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <OutDir>$(ProjectDir)Build\</OutDir>
+    <IntDir>$(ProjectDir)Build\</IntDir>
+    <TargetName>SudokuGUI</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
