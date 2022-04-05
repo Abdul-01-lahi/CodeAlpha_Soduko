@@ -2,3 +2,7 @@ x64/Debug
 Build/
 .ilk
 .pdb
+.vcxproj
+.filters
+.user
+
