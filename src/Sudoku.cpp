@@ -67,8 +67,6 @@ void Sudoku::on_SolveSlow_clicked()
         }
     }
 
-    DisplayNewBoard(grid);
-
     for (int i = 0; i < 9; i++) {
         for (int j = 0; j < 9; j++) {
             QTableWidgetItem* cell = ui->Table->item(i, j);
@@ -95,9 +93,7 @@ void Sudoku::on_SolveSlow_clicked()
     GreyCells();
     connect(this, &Sudoku::on_Stopped, &SolveThread, &Solve::Stop);
     connect(&SolveThread, &Solve::NewItem, this, &Sudoku::DisplaySingleItem);
-    
 
-    //ui->OutputLabel1->setText(QString::number(ui->horizontalSlider->value()));
 
     QtConcurrent::run(&Solve::start, &this->SolveThread, grid, ui->horizontalSlider->value());
     
@@ -203,20 +199,6 @@ void Sudoku::GreyCells()
         }
     }
     update();
-}
-
-void Sudoku::DisplayNewBoard(int inputGrid[9][9]) {
-    for (int i = 0; i < 9; i++) {
-        for (int j = 0; j < 9; j++) {
-            //ui->Table->setItem(i, j, new QTableWidgetItem);
-           // if (inputgrid[i][j] > 0) {
-            qDebug() << inputGrid[i][j];
-                //QString str = QString::number(inputGrid[i][j]);
-                //1ui->Table->item(i, j)->setText(str);
-            //}
-        }
-    }
-
 }
 
 void Sudoku::DisplaySingleItem(int i, int j, int n)

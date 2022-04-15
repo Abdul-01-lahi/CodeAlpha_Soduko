@@ -17,13 +17,6 @@ public:
     explicit Sudoku(QWidget *parent = Q_NULLPTR);
     ~Sudoku();
 
-
-    //bool isValidPlace(int row, int col, int num);
-    //bool findEmptyPlace(int& row, int& col);
-    //bool isPresentInBox(int boxStartRow, int boxStartCol, int num);
-    //bool isPresentInRow(int row, int num);
-    //bool isPresentInCol(int col, int num);
-
     void DisplayGrid();
 
 private:
@@ -50,7 +43,6 @@ private slots:
     void on_Stop_Recussion_clicked();
 
 public slots:
-    void DisplayNewBoard(int inputGrid[9][9]);
     void DisplaySingleItem(int i, int j, int n);
 
 
